@@ -1,0 +1,51 @@
+button {
+    &.accessibility {
+        color: inherit;
+        font: inherit;
+        background: transparent;
+        border: 0;
+        text-transform: inherit;
+        margin: 0;
+        padding: 0;
+        letter-spacing: inherit;
+        cursor: pointer;
+    }
+}
+
+.label {
+    width: 100%;
+    text-transform: uppercase;
+    display: block;
+    padding: 0 1rem 0.5rem;
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 1.25;
+    letter-spacing: 0.05rem;
+}
+
+.my-calls {
+    .ant-select-dropdown {
+        width: 15rem !important;
+        font-weight: 500;
+    }
+
+    .ant-badge-status-dot {
+        width: 12px;
+        height: 12px;
+    }
+
+
+    .ant-tag.grey {
+        font-weight: 500;
+        line-height: 1;
+        font-size: 0.6875rem;
+        color: $taggrey;
+        white-space: nowrap;
+        overflow: hidden;
+        display: block;
+        background: $belowLevel;
+        padding: 0.5rem;
+        text-transform: uppercase;
+        border-radius: 1.5rem;
+    }
+}

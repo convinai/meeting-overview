@@ -1,0 +1,108 @@
+// Styles for the Heat Map Component.
+
+.heatmap{
+    background: $belowLevel;
+    margin: 0;
+    padding: 0;
+    border-radius: 0.25rem;
+    height: 0.75rem;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    position: relative;
+    margin: 0.25rem 0;
+
+    &-container{
+        display: flex;
+        flex-flow: column;
+        padding-top: 0.5rem;
+    }
+
+    &.nobg{
+        background: transparent;
+        align-items: flex-end;
+    }
+
+    .subdivision{
+        border-radius: 0.25rem;
+        height: 0.75rem;
+        position: absolute;
+        z-index: 1;
+    }
+
+    .pin{
+        width: 0.6875rem;
+        border-radius: 50%;
+        height: 0.6875rem;
+        background: $bordergrey;
+        border: 0.07rem solid $pinborder;
+    }
+
+    .timebar{
+        position: absolute;
+        background: transparent;
+        height: 0.75rem;
+        z-index: 2;
+        cursor: pointer;
+
+        &:hover{
+            background: $primary;
+        }
+    }
+
+    .communication{
+        height: 1.3rem;
+        font-size: 0.6875rem;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        border-radius: 0.7rem;
+        padding: 0 0.5rem;
+        background: $textgrey;
+        color: $white;
+        position: absolute;
+        &::after{
+            content: " ";
+            position: absolute;
+            bottom: 100%;
+            left: 50%;
+            margin-left: -0.25rem;
+            border-width: 0.25rem;
+            border-style: solid;
+            border-color: transparent transparent $textgrey transparent;
+        }
+        .fa{
+            font-size: 0.6875rem;
+        }
+    }
+
+    &.communicationsec{
+        .communication::after{
+            top: 100%;
+            border-color: $textgrey transparent transparent transparent;
+        }
+    }
+
+    &-timeline{
+        position: relative;
+        display: flex;
+        height: 1.2rem;
+        display: none;
+        .timestop{
+            position: absolute;
+            font-size: 0.6875rem;
+            transform: rotate(-70deg);
+            font-weight: 500;
+            color: $echoblue;
+            top: 1rem;
+        }
+    }
+
+    .callerbar{
+        background: $callerteal;
+    }
+
+    .receiverbar{
+        background: $receiverpink;
+    }
+}
