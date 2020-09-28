@@ -140,6 +140,6 @@ export const getDuration = (start, end) => {
 
 export const getMatchRegex = (arr) => new RegExp(arr.map((key) => `\\b${key}\\b`).join('|'), 'gi');
 
-export const getDurationInSeconds = (start = new Date(), end = new Date()) => {
-    return Math.abs(new Date(end).getTime() - new Date(start).getTime()) / 1000;
-};
+export const getDurationInSeconds = (start = new Date(), end = new Date()) => Math.abs(
+    new Date(end).getTime() - new Date(start).getTime(),
+) / 1000;

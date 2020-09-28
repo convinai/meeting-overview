@@ -22,7 +22,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vsanse/meeting-overview.git"
+    "url": "git+https://github.com/convinai/meeting-overview.git"
   },
   "peerDependencies": {
     "react": ">=16.8.0",
@@ -82,7 +82,7 @@
     "screenfull": "^5.0.2"
   },
   "bugs": {
-    "url": "https://github.com/vsanse/meeting-overview/issues"
+    "url": "https://github.com/convinai/meeting-overview/issues"
   },
-  "homepage": "https://github.com/vsanse/meeting-overview#readme"
+  "homepage": "https://github.com/convinai/meeting-overview#readme"
 }
