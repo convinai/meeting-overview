@@ -28,3 +28,17 @@ Find example app using meeting overview [convin-example](https://convin-example.
         callId={callId}
     />
 ```
+
+## Endpoints being used:
+
+ #### **src > Apis > endpoints.js**
+
+ ```js
+ const endpoints = {
+    getMeetingId: '/meeting/meeting/retrieve/',
+    transcriptEndpoint: '/meeting/meeting/transcript/',
+    callMediaEndpoint: '/meeting/meeting/media/',
+};
+
+export default endpoints;
+```

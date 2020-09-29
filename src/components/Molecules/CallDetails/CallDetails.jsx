@@ -2,13 +2,13 @@
 /* eslint-disable react/no-danger */
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Select, Tag } from 'antd';
+// import { Select, Tag } from 'antd';
 import { getDuration, getMatchRegex } from '../../../utils/helpers';
 import config from '../../../utils/meeting.config';
 import VideoPlayer from '../../Atoms/VideoPlayer/VideoPlayer';
 import Label from '../../Atoms/Label/Label';
 
-const { Option } = Select;
+// const { Option } = Select;
 
 const CallDetails = ({
     playerHandlers,
@@ -23,10 +23,10 @@ const CallDetails = ({
     title,
     start_time,
     end_time,
-    showUserOptions,
-    call_type,
-    changeCallType,
-    allCallTypes,
+    // showUserOptions,
+    // call_type,
+    // changeCallType,
+    // allCallTypes,
     conference_tool,
     client,
     description,
@@ -65,7 +65,7 @@ const CallDetails = ({
                                 : '')}
                         </div>
                     </div>
-                    <div className="detail novertical">
+                    {/* <div className="detail novertical">
                         <Label label={config.CALLTYPE} />
                         {!showUserOptions ? (
                             <Tag
@@ -100,7 +100,7 @@ const CallDetails = ({
                                 ))}
                             </Select>
                         )}
-                    </div>
+                    </div> */}
                     <div className="detail">
                         <Label label={config.MEDIUM} />
                         <div>{conference_tool}</div>
